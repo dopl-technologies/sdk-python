@@ -1,0 +1,5 @@
+-e git+https://github.com/dopl-technologies/api-protos-python.git@c581c509f2a5920c54c769e71386f907cb013648#egg=dopltech_api_protos
+grpcio==1.35.0
+grpcio-tools==1.35.0
+protobuf==3.14.0
+six==1.15.0
