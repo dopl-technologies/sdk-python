@@ -1,0 +1,15 @@
+language: python
+python:
+- '3.7'
+install:
+- pip install -r requirements.txt
+script:
+- pytest
+deploy:
+  provider: pypi
+  username: __token__
+  password:
+    secure: pL0KGtgxOF8FUzXFuRMABqnK7XSfRISPhHiXGUH0oPToKUPVJaDh4PYeyWFcxBb44xC1HGL/F+3my2TyC83pqVWG1IYSn2NdgU0Cn/WQ86Rc2goazDwdS1ul2BqoxmZWnviKC31cneDSCzct8Dd5EHtPNFssixMU2IzHt91MLV6BRtA6H69uByHSwCOPz53emyLfs45RlwmSzWvdZqojKZHWYmpBWMcs4oDn/CxFeGv5WKEf+uDRWa3zshTE854t//YZZjneAQutPHdqfy4lhgnD3l4fZVNmhHXoaMtki6TqaY1XLyDFcMHJeDqwTWW8+JdjcjguI5uIbWK1S41GV70G59z36DJN3YAqXmMJog/GeXy1ktD0Hv+XjAzJYWeZDIC2S2E3eLp8z8CwbapgOjShkU+Ec36TmFM5f/dV6e9gvKSywNt4+o3BGWShA/93erafjNAtOFDzni6EVm6sn6fpAVyO9yFYBCqou3t5muar0dVdfc+QOVxVihTyBJE8oilsVTggHsdvNAIVOBDAoTCpqJQRN0XUpj+Ill/9HLRR9lWgtQBbzfDMi5dDQNQ6lBAh2MFlJYbsjSZl3Kp1wP31xHVn8I+gVn4gQq67otTGFIqstQp23Uxj+Xk0ikNPpJuVe23qEjPIj8R+PbwNGYWsOZcPhp2eEBMboYTXsqk=
+  on:
+    branch: main
+    tags: true

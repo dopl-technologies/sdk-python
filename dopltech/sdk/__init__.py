@@ -1,5 +1,4 @@
 from ctypes import *
-from dotenv import load_dotenv
 import logging
 import os
 import signal
@@ -7,7 +6,7 @@ import sys
 import threading
 import time
 
-from telerobotics_protos.common_pb2 import Frame
+from dopltech.protos.common_pb2 import Frame
 
 go_int_type=None
 if sys.maxsize > 2**32:

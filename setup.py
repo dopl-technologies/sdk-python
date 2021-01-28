@@ -1,6 +1,6 @@
 from setuptools import setup, find_namespace_packages
 
-__version__ = 0.1
+__version__ = '0.0.1'
 
 setup(
    name='dopltech-sdk',
@@ -11,6 +11,6 @@ setup(
    url='https://github.com/dopl-technologies/sdk-python',
    keywords=['dopl', 'technologies', 'telerobotics', 'sdk', 'electrophysiology', 'medicine'],
    packages=find_namespace_packages(include=['dopltech.*']),
-   install_requires=['grpcio', 'grpcio-tools'],
+   install_requires=['dopltech-api-protos', 'grpcio', 'grpcio-tools'],
    data_files=[('bin', ['bin/libsdk.so', 'bin/libsdk.dll'])],
 )
