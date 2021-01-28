@@ -3,9 +3,11 @@ python:
 - '3.7'
 install:
 - pip install -r requirements.txt
+- bash download_libsdk
 script:
 - pytest
 deploy:
+  skip_cleanup: true
   provider: pypi
   username: __token__
   password:
@@ -13,3 +15,6 @@ deploy:
   on:
     branch: main
     tags: true
+env:
+  global:
+    secure: gj8zcpri94lzv2vRg5wQ23E/CJGAABuolL2yzlyasdOG6GJ/Mp42K7SoipVhTDFwBEQoYp0dSmGKO0UtocQL96zUO6VpkjhO9gtOCZOL4BA209Qa0mTgOI+7m3wOLXxdypzavCwQRNEyk2uDEFFTb29w88V86VQwDWSqnzFLkUiJr4npcX8c2NPr/FNlpp568tYz7hEVbwkkK7S+iP+ey7/o7L1FwVmGTCdVHuQOJbuO5ws1JX9gLxSBclw4Ai1HI8YWfQa2ru7MJbXjCI7cdTl4bO+j8MxDuKO6kktQCbt8OnxMWsWKKimOkr/nWBdYwIp6PeBhQN3IsMJi12MNzmz65N+c1FNbduu3U0dYiwfiF7PdTVNNT/n7LWArLcrkYubnhaP7Jw4r5+z05IawwKXawyoWEyEEJCxDBL8AcdauuX1anzHbzBXQHuexHN8RzJ0uupnSPyUs4zhk0vNDNU9Y25gR0ZMXGvRB6StW2Njcm+uyDsofNDRwCyIK2yPCir3caT8vY18SCo3mf4wmscJeo52RwLnTnWqA+7TaO8WaD/1mI0IB8u259nfFyw8qVjRjivAhO2JCPVfqCIyPKogeC2yDgT7f5UdmWLbdRPnaq0l2iAX8+w61A6eCfO+e+qRZf4G3xo3jt3xay4uq4ydBih1TNbyo9aX5FaKCeRQ= # GITHUB_TOKEN
