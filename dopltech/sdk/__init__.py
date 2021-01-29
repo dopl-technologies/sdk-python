@@ -38,7 +38,7 @@ if os.name == 'nt':
     lib_extension = '.dll'
 
 script_dir = os.path.dirname(os.path.realpath(__file__))
-lib_path = os.path.join(script_dir, '..', '..', 'bin', 'libsdk' + lib_extension)
+lib_path = os.path.join(script_dir, 'bin', 'libsdk' + lib_extension)
 
 lib = cdll.LoadLibrary(lib_path)
 

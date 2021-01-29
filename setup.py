@@ -12,5 +12,4 @@ setup(
    keywords=['dopl', 'technologies', 'telerobotics', 'sdk', 'electrophysiology', 'medicine'],
    packages=find_namespace_packages(include=['dopltech.*']),
    install_requires=['dopltech-api-protos', 'grpcio', 'grpcio-tools'],
-   data_files=[('bin', ['bin/libsdk.so', 'bin/libsdk.dll'])],
 )
