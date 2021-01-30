@@ -126,7 +126,7 @@ class Sdk:
     def __get_frame_handler__(self, buffer, buffer_size_ptr):
         frame = self.__get_frame_callback__()
         if not frame:
-            return False
+            return True
         
         return self.__fill_buffer_with_frame__(buffer, buffer_size_ptr, frame)
 
