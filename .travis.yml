@@ -7,6 +7,7 @@ install:
 - bash download_libsdk
 script:
 - pytest
+- python setup.py sdist
 deploy:
   skip_cleanup: true
   provider: pypi
