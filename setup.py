@@ -12,6 +12,6 @@ setup(
    keywords=['dopl', 'technologies', 'telerobotics', 'sdk', 'electrophysiology', 'medicine'],
    packages=find_namespace_packages(include=['dopltech.*']),
    install_requires=['dopltech-api-protos', 'grpcio', 'grpcio-tools'],
-   package_data={'dopltech.sdk.bin': ['dopltech/sdk/bin/libsdk_arm.so', 'dopltech/sdk/bin/libsdk_amd64.so', 'dopltech/sdk/bin/libsdk_amd64.dylib', 'dopltech/sdk/bin/libsdk_amd64.dll']},
-   include_package_data=True,
+   # package_data={'dopltech.sdk.bin': ['dopltech/sdk/bin/libsdk_arm.so', 'dopltech/sdk/bin/libsdk_amd64.so', 'dopltech/sdk/bin/libsdk_amd64.dylib', 'dopltech/sdk/bin/libsdk_amd64.dll']},
+   # include_package_data=True,
 )
