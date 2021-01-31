@@ -1,11 +1,6 @@
-import os
-
 from setuptools import setup, find_namespace_packages
 
 __version__ = '0.0.2'
-
-script_dir = os.path.dirname(os.path.realpath(__file__))
-bin_dir = os.path.join(script_dir, 'dopltech', 'sdk', 'bin')
 
 setup(
    name='dopltech-sdk',
@@ -17,5 +12,5 @@ setup(
    keywords=['dopl', 'technologies', 'telerobotics', 'sdk', 'electrophysiology', 'medicine'],
    packages=find_namespace_packages(include=['dopltech.*']),
    install_requires=['dopltech-api-protos', 'grpcio', 'grpcio-tools'],
-   data_files=[('lib/site-packages', [bin_dir + '/libsdk.so'])],
+   data_files=[('lib/site-packages', ['dopltech/sdk/bin/libsdk_arm.so', 'dopltech/sdk/bin/libsdk_amd64.so', 'dopltech/sdk/bin/libsdk_amd64.dylib', 'dopltech/sdk/bin/libsdk_amd64.dll'])],
 )
