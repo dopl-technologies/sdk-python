@@ -5,10 +5,8 @@ install:
 - pip install --upgrade setuptools
 - pip install -r requirements.txt
 - bash download_libsdk
-- ls dopltech/sdk/bin
 script:
 - pytest
-- python setup.py sdist
 deploy:
   skip_cleanup: true
   provider: pypi
