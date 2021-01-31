@@ -1,0 +1,6 @@
+dopltech-api-protos==0.0.1
+-e git+https://github.com/dopl-technologies/sdk-python.git@6316b3572c6225caee0c57a35c2d2fa00295598c#egg=dopltech_sdk
+grpcio==1.35.0
+grpcio-tools==1.35.0
+protobuf==3.14.0
+six==1.15.0
