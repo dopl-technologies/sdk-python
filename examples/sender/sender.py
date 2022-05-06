@@ -2,9 +2,9 @@
     sender.py
     ~~~~~~~~~~~~~~
 
-    Sends dummy data
+    This example demonstrates how to integrate a surgical device with dopl connect.
 
-    :copyright: 2020 Ryan James
+    :copyright: 2022 Ryan James
 """
 from os import path
 
