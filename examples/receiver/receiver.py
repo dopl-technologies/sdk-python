@@ -1,8 +1,8 @@
 """
-    sender.py
+    receiver.py
     ~~~~~~~~~~~~~~
 
-    Sends dummy data
+    This example demonstrates how to integrate a surgical device with dopl connect.
 
     :copyright: 2020 Ryan James
 """
